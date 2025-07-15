@@ -1,9 +1,9 @@
 public class TwilioSMS {
 
     // Replace with your Account SID and Auth Token
-    private static final String ACCOUNT_SID = 'AC3c0a18de3611f417e015b33c1f488cf8';
-    private static final String AUTH_TOKEN = 'a2fe954caaff3bb1d37d96613296cd71';
-    private static final String TWILIO_NUMBER = '+91 9663893735'; // Your Twilio phone number
+    private static final String ACCOUNT_SID = 'ACXXXXXXX';
+    private static final String AUTH_TOKEN = 'auth token';
+    private static final String TWILIO_NUMBER = '+91 XXXXXXXXXX'; // Your Twilio phone number
 
     public class TwilioResponse {
         public String sid;

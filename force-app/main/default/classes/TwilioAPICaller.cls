@@ -10,8 +10,8 @@ public class TwilioAPICaller {
     // IMPORTANT: Replace with your actual Twilio Account SID and Auth Token
     // Consider storing these securely in Custom Metadata Types or Protected Custom Settings
     // for production environments.
-    private static final String TWILIO_ACCOUNT_SID = 'AC3c0a18de3611f417e015b33c1f488cf8'; // Your Twilio Account SID
-    private static final String TWILIO_AUTH_TOKEN = 'a2fe954caaff3bb1d37d96613296cd71'; // Your Twilio Auth Token
+    private static final String TWILIO_ACCOUNT_SID = 'ACXXXX'; // Your Twilio Account SID
+    private static final String TWILIO_AUTH_TOKEN = 'Auth token'; // Your Twilio Auth Token
 
     /**
      * @description Makes a generic HTTP POST callout to a specified Twilio API endpoint.
