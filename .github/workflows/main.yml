@@ -1,0 +1,23 @@
+name: Relyance SCI Scan
+
+on:
+  #TODO: Modify the cron job schedule below.
+  workflow_dispatch:
+
+jobs:
+  #TODO: Modify the job names and the machine below if you would like.
+  execute-relyance-sci:
+    name: Relyance SCI Job
+    runs-on: ubuntu-latest
+    env: 
+      API_KEY: ${{ secrets.RELYANCE_API_KEY }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      # TODO: Update the docker pull command in the "run" section below. Recommend setting the ACCESS_TOKEN as an environment variable.
+      - name: Pull and run SCI binary 
+        run: |-
+          docker pull gcr.io/relyance-internal/compliance_inspector_stage:release && \
+          docker run --rm -v `pwd`:/repo --env "API_KEY=$API_KEY" gcr.io/relyance-internal/compliance_inspector_stage:release
