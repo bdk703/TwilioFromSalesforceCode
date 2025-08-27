@@ -19,5 +19,5 @@ jobs:
       # TODO: Update the docker pull command in the "run" section below. Recommend setting the ACCESS_TOKEN as an environment variable.
       - name: Pull and run SCI binary 
         run: |-
-          docker pull gcr.io/relyance-internal/compliance_inspector_stage:release && \
-          docker run --rm -v `pwd`:/repo --env "API_KEY=$API_KEY" gcr.io/relyance-internal/compliance_inspector_stage:release
+          docker pull gcr.io/relyance-ext/compliance_inspector:release && \
+          docker run --rm -v `pwd`:/repo --env "API_KEY=$API_KEY" gcr.io/relyance-ext/compliance_inspector:release
