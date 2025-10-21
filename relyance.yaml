@@ -35,7 +35,7 @@ services:
 # Source Directories to Exclude
 # Purpose: Configuration is used to exclude directories from analysis such as test directories etc.
 # Note: Directory paths are relative to the repository's root directory
-#exclude:
+exclude:
   - <path of the source folder to exclude>
   - <path of the source folder to exclude>
 
