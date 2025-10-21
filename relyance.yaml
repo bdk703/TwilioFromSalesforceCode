@@ -42,6 +42,4 @@ services:
 
 # Excluding files and directories using patterns (enable lines as needed)
 exclude_patterns:
-#  - "**/*_mock.*" # example of excluding file with some pattern
-  - "**/classes/**" # example of excluding a directory regardless where the directory is
-#  - src/excluded_file.go # example of excluding a specific file
+  - "**/classes/**"
