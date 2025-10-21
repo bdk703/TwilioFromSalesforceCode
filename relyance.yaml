@@ -35,13 +35,13 @@ services:
 # Source Directories to Exclude
 # Purpose: Configuration is used to exclude directories from analysis such as test directories etc.
 # Note: Directory paths are relative to the repository's root directory
-exclude:
+#exclude:
   - <path of the source folder to exclude>
   - <path of the source folder to exclude>
 
 
 # Excluding files and directories using patterns (enable lines as needed)
-#exclude_patterns:
+exclude_patterns:
 #  - "**/*_mock.*" # example of excluding file with some pattern
-#  - "**/exclude_dir/**" # example of excluding a directory regardless where the directory is
+  - "**/classes/**" # example of excluding a directory regardless where the directory is
 #  - src/excluded_file.go # example of excluding a specific file
